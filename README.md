@@ -1,13 +1,14 @@
 # Nanoscale Channel Flow & Reaction Simulator
 
-A minimal MATLAB + C++ MEX toolbox for computing fluid flow in narrow channels and the steady‑state concentration of a reacting species.
+A minimal Octave + C++ toolbox for computing fluid flow in narrow channels and the steady‑state concentration of a reacting species.
 
 ---
 
 ## Requirements
 
-* MATLAB R2024a (or newer)
-* A C++17‑compatible compiler configured for `mex`
+* Octave 9.12 - Simulation code
+* Octave 9.12 or greater - Plotting code
+* A C++17‑compatible compiler configured for `oct`
 
 ---
 
@@ -40,7 +41,7 @@ Results (fields, metrics, plots) are written to `output/` and `figures/`.
 Helpers_analytical/   # Closed‑form solutions for validation
 Helpers_Plotting/     # Scripts to load output and create figures/metrics
 src/
-  ├─ cppfiles/        # Finite‑difference & LBM kernels (C++, MEX)
+  ├─ cppfiles/        # Finite‑difference & LBM kernels (C++, Oct)
   └─ mfiles/          # MATLAB solvers, wrappers, utilities
 GeometryGenerator.m   # Build 2‑D channel geometry
 LBMSimulator.m        # Flow solver front‑end
