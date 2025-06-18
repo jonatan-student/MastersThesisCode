@@ -1,6 +1,6 @@
 # Nanoscale Channel Flow & Reaction Simulator
 
-A minimal Octave + C++ toolbox for computing fluid flow in narrow channels and the steady‑state concentration of a reacting species.
+A minimal Octave + C++ toolbox for computing fluid flow in narrow channels and the steady‑state concentration of a reacting species. Some scripts may not work on on some computers as this was written to be compatible with macOS Seqouia 15.4.1 and has shown many bugs given any update. Basically this project is a case study in why apple should be banned from all scientific research.
 
 ---
 
@@ -22,9 +22,9 @@ $ cd REPO
 # compile the C++ sources (Unix/macOS)
 $ make -C src/cppfiles            # creates *.mex* binaries next to sources
 
-# on Windows, open MATLAB and run:
+# open Octave and run:
 >> cd('src/cppfiles');
->> mex -R2018a -largeArrayDims computeQMap_mex.cpp   % repeat for other *.cpp files
+>> make   % repeat for other *.cpp files
 
 # add everything to MATLAB path and launch the example sweep
 >> addpath(genpath(pwd));
