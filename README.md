@@ -56,8 +56,3 @@ Plotting_finals.m     # Post‑processing entry point
 
 Some functions inside `src/cppfiles/` and `src/mfiles/` were from code written by **Professor Jesper Schmidt Hansen**. His contributions are gratefully acknowledged.
 
----
-
-## License
-
-This project is released under the MIT License (see `LICENSE`).
